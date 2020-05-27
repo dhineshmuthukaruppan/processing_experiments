@@ -11,8 +11,16 @@ void draw(){
     for(int j=0; j<width; j=j+20){    
       // j refers to x value and i refers to y value
         
-      if(dist(width/2, height/2, j, i) > 200){    
-        fill(random(0, 140));
+      // forms pattern in the center
+      //if(dist(width/2, height/2, j, i) > 200){    
+      //  fill(random(0, 140));
+      //}else{
+      //  fill(random(140, 250));    
+      //}
+      
+      // forms pattern according to the mouse position
+      if(dist(mouseX, mouseY, j, i) > 200){    
+        fill(random(0, 140));      
       }else{
         fill(random(140, 250));    
       }
