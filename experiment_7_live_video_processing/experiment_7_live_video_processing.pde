@@ -17,6 +17,7 @@ void setup(){
     video = new Capture(this, cameras[0]);   
     video.start();   
     println("video width: "+ video.width);   
+    println("video height:" + video.height);    
   }
 }
 
@@ -36,7 +37,5 @@ void draw(){
   //  video.read();   
   //}
   
-  
   image(video, 0, 0, width, height);
-
 }    
